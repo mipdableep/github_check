@@ -30,6 +30,7 @@ jobs:
       - name: Release
         uses: ncipollo/release-action@v1
         with:
+          token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
           tag: v${{ env.REVISION }}
           artifacts: "target/release/github_check"
           bodyFile: "body.md"
