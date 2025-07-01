@@ -1,6 +1,7 @@
 fn main() {
     println!("Hello, world!");
     println!("aaa");
+    println!("weee");
 }
 
 #[cfg(test)]
